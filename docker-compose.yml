@@ -1,0 +1,12 @@
+services:
+
+   image: mysql:5.7
+   container_name: mysql
+   volumes:
+     - mysqldata:/var/lib/mysql
+   environment:
+     MYSQL_ROOT_PASSWORD: root
+     MYSQL_DATABASE: dbcd container_name
+     MYSQL_USER: blog-user
+     MYSQL_PASSWORD: supersecret
+ 
